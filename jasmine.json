@@ -1,0 +1,10 @@
+{
+    "spec_dir": "src",
+    "spec_files": [
+        "algorithms/**/*[sS]pec.js",
+        "data-structures/**/*[sS]pec.js",
+        "!node_modules"
+    ],
+    "stopSpecOnExpectationFailure": false,
+    "random": false
+}
