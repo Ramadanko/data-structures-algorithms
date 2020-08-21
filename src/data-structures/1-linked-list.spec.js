@@ -14,6 +14,19 @@ describe('LinkedList', function () {
     });
 
     it('push', () => {
+        list.push('first');
+        expect(list.get(0)).toEqual('first');
+        expect(list.get(1)).toEqual('first');
+        list.push('second');
+        expect(list.get(1)).toEqual('second');
+        expect(list.get(0)).toEqual('first');
+        list.push('third')
+        expect(list.get(0)).toEqual('first');
+        expect(list.get(1)).toEqual('second');
+        expect(list.get(3)).toEqual('third');
+        list.pop()
+        list.pop()
+        list.pop()
         abcRange(26).map(character => list.push(character));
         expect(list.length).toEqual(26);
     });
