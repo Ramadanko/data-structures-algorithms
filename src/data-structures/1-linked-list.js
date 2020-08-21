@@ -39,7 +39,7 @@ class LinkedList {
             this.length--
             const node = this.head
             this.head = this.tail = false
-            return node
+            return node.value
         }
         this.length--
         const lastItem = this.tail
